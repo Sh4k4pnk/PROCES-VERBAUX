@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthèse du Comité Syndical - 26 Novembre 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        instBlue: '#0055A4',     /* Bleu Drapeau */
+                        instRed: '#EF4135',      /* Rouge Orangé */
+                        instGreen: '#8BC34A',    /* Vert Clair */
+                        instGray: '#F3F4F6',
+                    },
+                    fontFamily: {
+                        sans: ['Helvetica', 'Arial', 'sans-serif'],
+                        serif: ['Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .point-card {
+            transition: transform 0.2s ease-in-out;
+        }
+        .point-card:hover {
+            transform: translateY(-2px);
+        }
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0055A4;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed flex flex-col min-h-screen">
+
+    <!-- HEADER / EN-TÊTE -->
+    <header class="bg-instBlue text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-white text-instBlue p-2 rounded-full w-10 h-10 flex items-center justify-center font-bold">
+                    IN
+                </div>
+                <div>
+                    <h1 class="text-lg md:text-xl font-bold uppercase tracking-wide">Syndicat de Communes Ile Napoléon</h1>
+                    <p class="text-xs md:text-sm text-blue-200">Comité Syndical du 26 novembre 2025</p>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <span class="bg-white/10 px-3 py-1 rounded text-sm"><i class="far fa-file-alt mr-2"></i>Note de Synthèse (Propositions)</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8 max-w-5xl">
+
+        <!-- INTRODUCTION & SOMMAIRE -->
+        <section id="sommaire" class="mb-12">
+            <div class="bg-white rounded-lg shadow-md border-l-4 border-instBlue p-6 md:p-8">
+                <h2 class="text-2xl font-serif text-instBlue mb-4 border-b pb-2">Sommaire des propositions</h2>
+                <p class="text-gray-600 mb-6 italic">
+                    Veuillez trouver ci-dessous la synthèse détaillée des 9 points soumis à l'examen du Comité Syndical.
+                    Cliquez sur un titre pour accéder directement à la proposition.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="#point1" class="flex items-center p-3 rounded hover:bg-blue-50 transition text-instBlue font-medium group">
+                        <span class="bg-instBlue text-white w-6 h-6 rounded-full flex items-center justify-center text-xs mr-3 group-hover:bg-instRed transition">1</span>
+                        Approbation du PV du 29/10/2025
+                    </a>
+                    <a href="#point2" class="flex items-center p-3 rounded hover:bg-blue-50 transition text-instBlue font-medium group">
+                        <span class="bg-instBlue text-white w-6 h-6 rounded-full flex items-center justify-center text-xs mr-3 group-hover:bg-instRed transition">2</span>
+                        Décision Modificative N°5 (Budget)
+                    </a>
+                    <a href="#point3" class="flex items-center p-3 rounded hover:bg-blue-50 transition text-instBlue font-medium group">
+                        <span class="bg-instBlue text-white w-6 h-6 rounded-full flex items-center justify-center text-xs mr-3 group-hover:bg-instRed transition">3</span>
+                        Sausheim : Rosaces Eglise St-Laurent
+                    </a>
+                    <a href="#point4" class="flex items-center p-3 rounded hover:bg-blue-50 transition text-instBlue font-medium group">
+                        <span class="bg-instBlue text-white w-6 h-6 rounded-full flex items-center justify-center text-xs mr-3 group-hover:bg-instRed transition">4</span>
+                        Dietwiller : Réhabilitation Vieux Moulin
+                    </a>
+                    <a href="#point5" class="flex items-center p-3 rounded hover:bg-blue-50 transition text-instBlue font-medium group">
+                        <span class="bg-instBlue text-white w-6 h-6 rounded-full flex items-center justify-center text-xs mr-3 group-hover:bg-instRed transition">5</span>
+                        Baldersheim : Abords Pôle Scolaire
+                    </a>
+                    <a href="#point6" class="flex items-center p-3 rounded hover:bg-blue-50 transition text-instBlue font-medium group">
+                        <span class="bg-instBlue text-white w-6 h-6 rounded-full flex items-center justify-center text-xs mr-3 group-hover:bg-instRed transition">6</span>
+                        Rixheim : Rue des Sapins (Pénalités)
+                    </a>
+                    <a href="#point7" class="flex items-center p-3 rounded hover:bg-blue-50 transition text-instBlue font-medium group">
+                        <span class="bg-instBlue text-white w-6 h-6 rounded-full flex items-center justify-center text-xs mr-3 group-hover:bg-instRed transition">7</span>
+                        Maintenance Eclairage Public / Feux
+                    </a>
+                    <a href="#point8" class="flex items-center p-3 rounded hover:bg-blue-50 transition text-instBlue font-medium group">
+                        <span class="bg-instBlue text-white w-6 h-6 rounded-full flex items-center justify-center text-xs mr-3 group-hover:bg-instRed transition">8</span>
+                        Tarifs Séjours 2026 (Ile aux Copains)
+                    </a>
+                    <a href="#point9" class="flex items-center p-3 rounded hover:bg-blue-50 transition text-instBlue font-medium group">
+                        <span class="bg-instBlue text-white w-6 h-6 rounded-full flex items-center justify-center text-xs mr-3 group-hover:bg-instRed transition">9</span>
+                        Association La Passerelle (Ciner'J)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- POINTS DETAILLES -->
+        <div class="space-y-12">
+
+            <!-- POINT 1 -->
+            <article id="point1" class="bg-white rounded-lg shadow point-card overflow-hidden">
+                <div class="bg-gray-100 px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                    <h3 class="text-xl font-bold text-instBlue">Point N°1 : Approbation du Procès-Verbal</h3>
+                    <span class="bg-instGreen text-white text-xs px-2 py-1 rounded uppercase font-bold">Administration</span>
+                </div>
+                <div class="p-6 md:p-8">
+                    <p class="mb-4">Il est proposé au comité syndical d'approuver le procès-verbal de la séance du 29 octobre 2025.</p>
+                    <p class="text-sm text-gray-500"><i class="fas fa-info-circle mr-2"></i>Aucune remarque n'a été formulée préalablement à la présente séance.</p>
+                    
+                    <div class="mt-6 flex justify-end">
+                        <a href="#sommaire" class="inline-flex items-center text-instRed hover:text-red-700 font-semibold transition text-sm uppercase tracking-wider">
+                            <i class="fas fa-arrow-up mr-2"></i> Retour au sommaire
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- POINT 2 (DÉTAILLÉ) -->
+            <article id="point2" class="bg-white rounded-lg shadow point-card overflow-hidden">
+                <div class="bg-gray-100 px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                    <h3 class="text-xl font-bold text-instBlue">Point N°2 : Décision Modificative N°5</h3>
+                    <span class="bg-instGreen text-white text-xs px-2 py-1 rounded uppercase font-bold">Budget</span>
+                </div>
+                <div class="p-6 md:p-8">
+                    <p class="mb-4">Proposition d'ajustement du budget 2025 pour tenir compte des besoins réels. La DM5 s'équilibre en fonctionnement par une réduction du virement à la section d'investissement et en investissement par des ajustements d'opérations.</p>
+                    
+                    <div class="grid lg:grid-cols-2 gap-8 mt-6">
+                        <!-- Section Fonctionnement -->
+                        <div class="bg-blue-50 p-5 rounded border-t-4 border-instBlue">
+                            <h4 class="font-bold text-instBlue mb-3 text-lg border-b border-blue-200 pb-2">Section de Fonctionnement</h4>
+                            <p class="text-sm mb-3">Total mouvements : <strong>320 868 €</strong></p>
+                            
+                            <h5 class="font-semibold text-sm text-gray-700 mt-2">Dépenses Augmentées (Crédits ouverts) :</h5>
+                            <ul class="text-sm space-y-1 mb-4 text-gray-600">
+                                <li class="flex justify-between"><span>DSP La Passerelle</span> <span class="font-mono text-instRed">+122 500 €</span></li>
+                                <li class="flex justify-between"><span>Subvention La Passerelle</span> <span class="font-mono text-instRed">+82 500 €</span></li>
+                                <li class="flex justify-between"><span>Personnel (Non titulaires/Primes)</span> <span class="font-mono text-instRed">~43 000 €</span></li>
+                                <li class="flex justify-between"><span>Énergie (Électricité)</span> <span class="font-mono text-instRed">+7 600 €</span></li>
+                                <li class="flex justify-between"><span>Maintenance & Locations</span> <span class="font-mono text-instRed">~23 500 €</span></li>
+                            </ul>
+
+                            <h5 class="font-semibold text-sm text-gray-700 mt-2">Recettes d'ordre (Financement) :</h5>
+                            <ul class="text-sm space-y-1 text-gray-600">
+                                <li class="flex justify-between"><span>Virement vers investissement</span> <span class="font-mono text-green-600">-320 868 €</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Section Investissement -->
+                        <div class="bg-green-50 p-5 rounded border-t-4 border-instGreen">
+                            <h4 class="font-bold text-green-700 mb-3 text-lg border-b border-green-200 pb-2">Section d'Investissement</h4>
+                            <p class="text-sm mb-3">Total mouvements équilibrés : <strong>370 868 €</strong></p>
+
+                            <h5 class="font-semibold text-sm text-gray-700 mt-2">Dépenses (Ajustements) :</h5>
+                            <ul class="text-sm space-y-1 mb-4 text-gray-600">
+                                <li class="flex justify-between"><span>Frais d'études (Art. 2031)</span> <span class="font-mono text-instRed">+50 000 €</span></li>
+                                <li class="flex justify-between"><span>Immobilisations (Art. 2317)</span> <span class="font-mono text-green-600">-329 868 €</span></li>
+                            </ul>
+
+                            <h5 class="font-semibold text-sm text-gray-700 mt-2">Recettes :</h5>
+                            <ul class="text-sm space-y-1 text-gray-600">
+                                <li class="flex justify-between"><span>Subventions autres communes</span> <span class="font-mono text-instGreen">+41 000 €</span></li>
+                                <li class="flex justify-between"><span>Virement du fonctionnement</span> <span class="font-mono text-instRed">-320 868 €</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 flex justify-end">
+                        <a href="#sommaire" class="inline-flex items-center text-instRed hover:text-red-700 font-semibold transition text-sm uppercase tracking-wider">
+                            <i class="fas fa-arrow-up mr-2"></i> Retour au sommaire
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- POINT 3 -->
+            <article id="point3" class="bg-white rounded-lg shadow point-card overflow-hidden">
+                <div class="bg-gray-100 px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                    <h3 class="text-xl font-bold text-instBlue">Point N°3 : Sausheim - Eglise St-Laurent</h3>
+                    <span class="bg-instGreen text-white text-xs px-2 py-1 rounded uppercase font-bold">Travaux</span>
+                </div>
+                <div class="p-6 md:p-8">
+                    <p class="mb-4">Proposition d'approbation des avenants aux marchés de travaux pour la réfection des rosaces (Opération n°32502).</p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full text-sm text-left">
+                            <thead class="bg-gray-100 text-gray-700 uppercase font-medium">
+                                <tr>
+                                    <th class="px-4 py-2">Lot</th>
+                                    <th class="px-4 py-2">Entreprise</th>
+                                    <th class="px-4 py-2">Objet de la modification</th>
+                                    <th class="px-4 py-2">Montant Avenant</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold">Lot 2</td>
+                                    <td class="px-4 py-3">Scherberich MH</td>
+                                    <td class="px-4 py-3">Ajout de pastilles anti-pigeons</td>
+                                    <td class="px-4 py-3 text-instRed">+3 290,00 € HT</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold">Lot 3</td>
+                                    <td class="px-4 py-3">Hoff Marbach</td>
+                                    <td class="px-4 py-3">Peinture charpente (au lieu de lasure)</td>
+                                    <td class="px-4 py-3 text-instRed">+788,00 € HT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mt-4 text-sm font-bold text-right text-instBlue">Impact global proposé : +4,23% (Montant final : 100 389,80 € HT).</p>
+
+                    <div class="mt-6 flex justify-end">
+                        <a href="#sommaire" class="inline-flex items-center text-instRed hover:text-red-700 font-semibold transition text-sm uppercase tracking-wider">
+                            <i class="fas fa-arrow-up mr-2"></i> Retour au sommaire
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- POINT 4 (DÉTAILLÉ) -->
+            <article id="point4" class="bg-white rounded-lg shadow point-card overflow-hidden">
+                <div class="bg-gray-100 px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                    <h3 class="text-xl font-bold text-instBlue">Point N°4 : Dietwiller - Vieux Moulin</h3>
+                    <span class="bg-instGreen text-white text-xs px-2 py-1 rounded uppercase font-bold">Marchés Publics</span>
+                </div>
+                <div class="p-6 md:p-8">
+                    <p class="mb-4">Il est proposé au comité de prendre acte du résultat de la consultation et d'attribuer les marchés de travaux (Opération n°62004). Montant total proposé : <strong>1 169 905,96 € HT</strong>.</p>
+                    
+                    <!-- TABLEAU DES ATTRIBUTIONS -->
+                     <div class="overflow-x-auto mb-6 shadow-sm border rounded-lg">
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-instBlue text-white uppercase text-xs">
+                                <tr>
+                                    <th class="px-4 py-3">Lot</th>
+                                    <th class="px-4 py-3">Désignation</th>
+                                    <th class="px-4 py-3">Entreprise Retenue</th>
+                                    <th class="px-4 py-3 text-right">Montant HT</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200 bg-white">
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">1A</td>
+                                    <td class="px-4 py-2">Démolition / Gros-œuvre</td>
+                                    <td class="px-4 py-2">Altkirch Construction</td>
+                                    <td class="px-4 py-2 text-right">163 561,75 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">2</td>
+                                    <td class="px-4 py-2">Charpente bois</td>
+                                    <td class="px-4 py-2">Girold Constructions Bois</td>
+                                    <td class="px-4 py-2 text-right">185 359,36 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">3</td>
+                                    <td class="px-4 py-2">Couverture / Zinguerie</td>
+                                    <td class="px-4 py-2">Iltis & Hug Toiture</td>
+                                    <td class="px-4 py-2 text-right">94 131,98 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">5</td>
+                                    <td class="px-4 py-2">Menuiserie ext.</td>
+                                    <td class="px-4 py-2">Billand Menuiseries</td>
+                                    <td class="px-4 py-2 text-right">92 470,68 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">6</td>
+                                    <td class="px-4 py-2">Echafaudages</td>
+                                    <td class="px-4 py-2">Echapro</td>
+                                    <td class="px-4 py-2 text-right">9 309,00 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">7</td>
+                                    <td class="px-4 py-2">Cloisons / Plâtre</td>
+                                    <td class="px-4 py-2">Werey Plâtre et Staff</td>
+                                    <td class="px-4 py-2 text-right">150 131,58 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">8</td>
+                                    <td class="px-4 py-2">Menuiserie int.</td>
+                                    <td class="px-4 py-2">Menuiserie Bitsch</td>
+                                    <td class="px-4 py-2 text-right">116 727,71 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">9</td>
+                                    <td class="px-4 py-2">Chape / Carrelage</td>
+                                    <td class="px-4 py-2">Multisols</td>
+                                    <td class="px-4 py-2 text-right">38 826,00 €*</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">10</td>
+                                    <td class="px-4 py-2">Parquet</td>
+                                    <td class="px-4 py-2">Singer Parquets</td>
+                                    <td class="px-4 py-2 text-right">3 239,60 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">12</td>
+                                    <td class="px-4 py-2">Serrurerie</td>
+                                    <td class="px-4 py-2">Kleiber</td>
+                                    <td class="px-4 py-2 text-right">26 215,99 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">13</td>
+                                    <td class="px-4 py-2">Elévateur</td>
+                                    <td class="px-4 py-2">Orona Est</td>
+                                    <td class="px-4 py-2 text-right">20 450,00 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">14</td>
+                                    <td class="px-4 py-2">Nettoyage</td>
+                                    <td class="px-4 py-2">ACM Nettoyage 68</td>
+                                    <td class="px-4 py-2 text-right">1 662,00 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">15</td>
+                                    <td class="px-4 py-2">CVS</td>
+                                    <td class="px-4 py-2">Labeaune</td>
+                                    <td class="px-4 py-2 text-right">181 472,31 €</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">16</td>
+                                    <td class="px-4 py-2">Electricité</td>
+                                    <td class="px-4 py-2">Omni Electricité</td>
+                                    <td class="px-4 py-2 text-right">73 766,50 €**</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-4 py-2 font-bold text-gray-600">17</td>
+                                    <td class="px-4 py-2">Réseaux enterrés</td>
+                                    <td class="px-4 py-2">Altkirch Construction</td>
+                                    <td class="px-4 py-2 text-right">12 581,50 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text-xs text-gray-500 p-2 text-right">*Incluant options. **Incluant PSE.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-orange-50 p-4 border-l-4 border-instRed rounded">
+                            <h4 class="text-instRed font-bold text-sm mb-2"><i class="fas fa-times-circle mr-2"></i>Lots déclarés sans suite (À relancer)</h4>
+                            <ul class="text-sm list-disc list-inside text-gray-700 space-y-1">
+                                <li>Lot 1B : Remplissage béton de terre allégée</li>
+                                <li>Lot 4A : Enduit de façade</li>
+                                <li>Lot 4B : Pierre de taille</li>
+                            </ul>
+                        </div>
+                         <div class="bg-gray-100 p-4 border-l-4 border-gray-400 rounded">
+                            <h4 class="text-gray-700 font-bold text-sm mb-2"><i class="fas fa-hourglass-half mr-2"></i>Sursis à statuer</h4>
+                            <ul class="text-sm list-disc list-inside text-gray-700">
+                                <li>Lot 11 : Peinture</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex justify-end">
+                        <a href="#sommaire" class="inline-flex items-center text-instRed hover:text-red-700 font-semibold transition text-sm uppercase tracking-wider">
+                            <i class="fas fa-arrow-up mr-2"></i> Retour au sommaire
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- POINT 5 -->
+            <article id="point5" class="bg-white rounded-lg shadow point-card overflow-hidden">
+                <div class="bg-gray-100 px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                    <h3 class="text-xl font-bold text-instBlue">Point N°5 : Baldersheim - Pôle Scolaire</h3>
+                    <span class="bg-instGreen text-white text-xs px-2 py-1 rounded uppercase font-bold">Projet</span>
+                </div>
+                <div class="p-6 md:p-8">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4">
+                        <p class="text-gray-700 max-w-2xl">Proposition de validation de l'Avant-Projet Définitif (APD) pour l'aménagement des abords du nouveau pôle scolaire (Opération n°22402).</p>
+                        <div class="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold mt-2 md:mt-0 shadow">
+                            Estimation : 690 000 € HT
+                        </div>
+                    </div>
+                    
+                    <h4 class="font-bold text-gray-800 mb-2 border-b pb-1">Nature des travaux projetés :</h4>
+                    <ul class="grid md:grid-cols-2 gap-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-instGreen mr-2"></i>Cours écoles maternelle & élémentaire</li>
+                        <li><i class="fas fa-check text-instGreen mr-2"></i>Création de deux parkings</li>
+                        <li><i class="fas fa-check text-instGreen mr-2"></i>Éclairage public et pavage</li>
+                        <li><i class="fas fa-check text-instGreen mr-2"></i>Plantations et mobilier urbain</li>
+                    </ul>
+                    <p class="mt-4 italic text-sm text-gray-600">Il est proposé d'autoriser le lancement de la consultation et la demande de subventions.</p>
+
+                    <div class="mt-6 flex justify-end">
+                        <a href="#sommaire" class="inline-flex items-center text-instRed hover:text-red-700 font-semibold transition text-sm uppercase tracking-wider">
+                            <i class="fas fa-arrow-up mr-2"></i> Retour au sommaire
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- POINT 6 -->
+            <article id="point6" class="bg-white rounded-lg shadow point-card overflow-hidden">
+                <div class="bg-gray-100 px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                    <h3 class="text-xl font-bold text-instBlue">Point N°6 : Rixheim - Rue des Sapins</h3>
+                    <span class="bg-instGreen text-white text-xs px-2 py-1 rounded uppercase font-bold">Contentieux</span>
+                </div>
+                <div class="p-6 md:p-8">
+                    <p class="mb-4">Proposition d'exonération partielle des pénalités de retard pour les entreprises GCM et ETPE, compte tenu des contraintes extérieures rencontrées (circulation riverains, approvisionnement).</p>
+                    
+                    <div class="bg-gray-50 rounded p-4 border border-gray-200">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="text-left text-gray-500 border-b">
+                                    <th class="pb-2">Lot</th>
+                                    <th class="pb-2">Retard constaté</th>
+                                    <th class="pb-2 text-right">Montant définitif proposé</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y">
+                                <tr>
+                                    <td class="py-2 font-medium">Lot 1 (GCM)</td>
+                                    <td class="py-2">26 jours</td>
+                                    <td class="py-2 text-right font-bold text-instBlue">9 680,13 €</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 font-medium">Lot 2 (ETPE)</td>
+                                    <td class="py-2">62 jours</td>
+                                    <td class="py-2 text-right font-bold text-instBlue">2 023,00 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mt-6 flex justify-end">
+                        <a href="#sommaire" class="inline-flex items-center text-instRed hover:text-red-700 font-semibold transition text-sm uppercase tracking-wider">
+                            <i class="fas fa-arrow-up mr-2"></i> Retour au sommaire
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- POINT 7 -->
+            <article id="point7" class="bg-white rounded-lg shadow point-card overflow-hidden">
+                <div class="bg-gray-100 px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                    <h3 class="text-xl font-bold text-instBlue">Point N°7 : Maintenance EP & Feux</h3>
+                    <span class="bg-instGreen text-white text-xs px-2 py-1 rounded uppercase font-bold">Marchés</span>
+                </div>
+                <div class="p-6 md:p-8">
+                    <p class="mb-4">Proposition d'autoriser le président à engager la consultation pour le renouvellement des accords-cadres d'entretien (2026-2028).</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white border rounded-lg p-4 shadow-sm">
+                            <div class="text-instRed text-2xl mb-2"><i class="fas fa-traffic-light"></i></div>
+                            <h4 class="font-bold text-gray-800">Feux Tricolores</h4>
+                            <p class="text-sm text-gray-600 mt-2">Maintenance préventive et corrective.</p>
+                            <div class="mt-3 text-sm font-semibold text-instBlue">Plafond proposé : 50 000 € HT / an</div>
+                        </div>
+                        <div class="bg-white border rounded-lg p-4 shadow-sm">
+                            <div class="text-instGreen text-2xl mb-2"><i class="far fa-lightbulb"></i></div>
+                            <h4 class="font-bold text-gray-800">Eclairage Public</h4>
+                            <p class="text-sm text-gray-600 mt-2">Entretien, remplacement candélabres, dépannage.</p>
+                            <div class="mt-3 text-sm font-semibold text-instBlue">Plafond proposé : 100 000 € HT / an</div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex justify-end">
+                        <a href="#sommaire" class="inline-flex items-center text-instRed hover:text-red-700 font-semibold transition text-sm uppercase tracking-wider">
+                            <i class="fas fa-arrow-up mr-2"></i> Retour au sommaire
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+             <!-- POINT 8 -->
+             <article id="point8" class="bg-white rounded-lg shadow point-card overflow-hidden">
+                <div class="bg-gray-100 px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                    <h3 class="text-xl font-bold text-instBlue">Point N°8 : Tarifs "L'Ile aux Copains" 2026</h3>
+                    <span class="bg-instGreen text-white text-xs px-2 py-1 rounded uppercase font-bold">Jeunesse</span>
+                </div>
+                <div class="p-6 md:p-8">
+                    <p class="mb-4">Proposition d'approbation des tarifs pour les séjours 2026, soumis par l'association délégataire.</p>
+
+                    <div class="mb-6">
+                        <h4 class="font-bold text-instBlue mb-2 text-sm uppercase">1. Séjour EuropaPark (Printemps) - Proposition</h4>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm border">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th class="p-2 border">Catégorie</th>
+                                        <th class="p-2 border text-center">Tranche 1</th>
+                                        <th class="p-2 border text-center">Tranche 2</th>
+                                        <th class="p-2 border text-center">Tranche 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-2 border font-medium">Territoire SCIN</td>
+                                        <td class="p-2 border text-center">120 €</td>
+                                        <td class="p-2 border text-center">130 €</td>
+                                        <td class="p-2 border text-center">140 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 border font-medium text-gray-500">Extérieurs</td>
+                                        <td class="p-2 border text-center text-gray-500">160 €</td>
+                                        <td class="p-2 border text-center text-gray-500">170 €</td>
+                                        <td class="p-2 border text-center text-gray-500">180 €</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-instBlue mb-2 text-sm uppercase">2. Séjour Plein Air (Été) - Proposition</h4>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm border">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th class="p-2 border">Catégorie</th>
+                                        <th class="p-2 border text-center">Tranche 1</th>
+                                        <th class="p-2 border text-center">Tranche 2</th>
+                                        <th class="p-2 border text-center">Tranche 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-2 border font-medium">Territoire SCIN</td>
+                                        <td class="p-2 border text-center">290 €</td>
+                                        <td class="p-2 border text-center">355 €</td>
+                                        <td class="p-2 border text-center">410 €</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex justify-end">
+                        <a href="#sommaire" class="inline-flex items-center text-instRed hover:text-red-700 font-semibold transition text-sm uppercase tracking-wider">
+                            <i class="fas fa-arrow-up mr-2"></i> Retour au sommaire
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- POINT 9 -->
+            <article id="point9" class="bg-white rounded-lg shadow point-card overflow-hidden">
+                <div class="bg-gray-100 px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                    <h3 class="text-xl font-bold text-instBlue">Point N°9 : Association La Passerelle</h3>
+                    <span class="bg-instGreen text-white text-xs px-2 py-1 rounded uppercase font-bold">Subvention</span>
+                </div>
+                <div class="p-6 md:p-8">
+                    <div class="flex items-start">
+                        <div class="text-instGreen text-3xl mr-4"><i class="fas fa-hand-holding-usd"></i></div>
+                        <div>
+                            <p class="mb-3">Proposition d'autoriser le versement du solde de la subvention 2025 (Programme Ciner'J).</p>
+                            <p class="text-sm text-gray-600 text-justify">
+                                Suite à la validation du plan de redressement judiciaire, il est proposé au comité d'autoriser le versement de la seconde tranche de <strong>82 500 €</strong> (soit 50% du total) et d'autoriser la signature de l'avenant à la convention.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex justify-end">
+                        <a href="#sommaire" class="inline-flex items-center text-instRed hover:text-red-700 font-semibold transition text-sm uppercase tracking-wider">
+                            <i class="fas fa-arrow-up mr-2"></i> Retour au sommaire
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- NOTE MANUSCRITE -->
+        <div class="mt-12 bg-instRed text-white p-6 rounded-lg text-center shadow-lg transform rotate-1 hover:rotate-0 transition">
+            <h3 class="text-xl font-bold uppercase mb-2"><i class="far fa-calendar-check mr-2"></i>Prochaine Séance</h3>
+            <p class="text-lg">Rendez-vous le <strong>17 décembre</strong> à <strong>18h30</strong></p>
+            <p class="text-sm opacity-90 mt-1">Lieu : Siège</p>
+        </div>
+
+    </main>
+
+    <footer class="bg-instBlue text-white py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center text-sm text-blue-200">
+            <p>&copy; 2025 Syndicat de Communes Ile Napoléon. Tous droits réservés.</p>
+            <p class="mt-2 text-xs">Document de synthèse numérique généré sur la base des notes de séance.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
